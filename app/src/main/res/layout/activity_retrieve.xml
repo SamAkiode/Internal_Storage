@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".retrieve">
+
+    <TextView
+        android:id="@+id/nameID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:padding="1sp"
+        android:layout_marginTop="12dp"
+        android:textSize="22sp"
+        />
+    <EditText
+        android:id="@+id/nameEditTextID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/nameID"
+        android:layout_toEndOf="@+id/nameID"
+         />
+
+    <TextView
+        android:id="@+id/passwordID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:padding="2sp"
+        android:text="@string/password"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/passwordEditTextID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/nameEditTextID"
+        android:layout_marginLeft="105dp"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginStart="105dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/backID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordID"
+        android:layout_marginTop="30dp"
+        android:text="@string/back" />
+    <Button
+        android:id="@+id/retrieveID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordID"
+        android:layout_marginTop="30dp"
+        android:layout_alignEnd="@id/passwordEditTextID"
+        android:text="@string/retrieve"
+        android:onClick="Retrieve"
+        android:layout_alignRight="@id/passwordEditTextID" />
+
+
+</RelativeLayout>
